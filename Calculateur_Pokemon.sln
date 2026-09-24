@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37411.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateurPokemon", "Calculateur Pokémon\CalculateurPokemon.csproj", "{4E2D6754-9CB7-4C10-9CC4-DAAA1C0E8415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{1A38D611-857E-427C-8372-2E2083B243B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E2D6754-9CB7-4C10-9CC4-DAAA1C0E8415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E2D6754-9CB7-4C10-9CC4-DAAA1C0E8415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E2D6754-9CB7-4C10-9CC4-DAAA1C0E8415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E2D6754-9CB7-4C10-9CC4-DAAA1C0E8415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A38D611-857E-427C-8372-2E2083B243B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A38D611-857E-427C-8372-2E2083B243B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A38D611-857E-427C-8372-2E2083B243B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A38D611-857E-427C-8372-2E2083B243B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {412306D3-8960-4D5F-9E46-0D2DDB2FB444}
+	EndGlobalSection
+EndGlobal
