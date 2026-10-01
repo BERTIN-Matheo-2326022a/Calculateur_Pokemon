@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculateurPokemon.Classes
+namespace PokemonCore
 {
     public class Nature
     {
