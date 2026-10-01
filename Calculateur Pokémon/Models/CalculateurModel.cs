@@ -1,13 +1,14 @@
-﻿using CalculateurPokemon.Classes;
+﻿using PokemonCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace CalculateurPokemon.Models
 {
-    internal class CalculateurModel
+    internal class CalculateurModel : INotifyPropertyChanged
     {
         #region Attributs privés
 
@@ -30,37 +31,67 @@ namespace CalculateurPokemon.Models
         public Pokemon PokemonSurvivant
         {
             get { return _pokemonSurvivant; }
-            set { _pokemonSurvivant = value; }
+            set
+            {
+                if (_pokemonSurvivant == value) return;
+                _pokemonSurvivant = value;
+                OnPropertyChanged(nameof(PokemonSurvivant));
+            }
         }
 
         public int? PvMinLeft
         {
             get { return _pvMinLeft; }
-            set { _pvMinLeft = value; }
+            set
+            {
+                if (_pvMinLeft == value) return;
+                _pvMinLeft = value;
+                OnPropertyChanged(nameof(PvMinLeft));
+            }
         }
 
         public int? Soin
         {
             get { return _soin; }
-            set { _soin = value; }
+            set
+            {
+                if (_soin == value) return;
+                _soin = value;
+                OnPropertyChanged(nameof(Soin));
+            }
         }
         
         public Pokemon PokemonAttaquant
         {
             get { return _pokemonAttaquant; }
-            set { _pokemonAttaquant = value; }
+            set
+            {
+                if (_pokemonAttaquant == value) return;
+                _pokemonAttaquant = value;
+                OnPropertyChanged(nameof(PokemonAttaquant));
+            }
         }
 
         public Attaque Attaque
         {
             get { return _attaque; }
-            set { _attaque = value; }
+            set
+            {
+                if (_attaque == value) return;
+                _attaque = value;
+                OnPropertyChanged(nameof(Attaque));
+            }
         }
 
         public bool? IsMultiCible
         {
             get { return _isMultiCible; }
-            set { _isMultiCible = value; }
+            set
+            {
+                if (_isMultiCible == value) return;
+                _isMultiCible = value;
+                OnPropertyChanged(nameof(IsMultiCible));
+            }
         }
 
         #endregion
@@ -73,6 +104,15 @@ namespace CalculateurPokemon.Models
             _pokemonAttaquant = pokemonAttaquant;
             _attaque = attaque;
         }
+
+        #endregion
+
+        #region INotifyPropertyChanged
+
+        public event PropertyChangedEventHandler? PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
         #endregion
     }

@@ -10,7 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <ProjectReference Include="..\Pokemon.Battle\PokemonBattle.csproj" />
+    <ProjectReference Include="..\Pokemon.Core\PokemonCore.csproj" />
+    <ProjectReference Include="..\Pokemon.Data\PokemonData.csproj" />
   </ItemGroup>
 
 </Project>
