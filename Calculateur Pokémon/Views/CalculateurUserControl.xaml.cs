@@ -12,9 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CalculateurPokemon.ViewModels;
-using CalculateurPokemon.Models;
-using PokemonCore;
 
 namespace CalculateurPokemon.Views
 {
@@ -26,11 +23,6 @@ namespace CalculateurPokemon.Views
         public CalculateurUserControl()
         {
             InitializeComponent();
-
-            PokemonSet pokeSurvivant = new PokemonSet();
-
-            var model = new CalculateurModel();
-            this.DataContext = new CalculateurUserControlViewModel(model);
         }
     }
 }
